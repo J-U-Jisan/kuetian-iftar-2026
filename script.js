@@ -142,10 +142,18 @@ function populateDepartmentDropdown() {
   });
 }
 
+function displayFees() {
+  $("#kuetianFeeDisplay").text(KUETIAN_FEE);
+  $("#spouseFeeDisplay").text(SPOUSE_FEE);
+  $("#kidFeeDisplay").text(KID_FEE);
+  $("#driverMaidFeeDisplay").text(DRIVER_MAID_FEE);
+}
+
 function onLoad() {
   populateBatchDropdown();
   populateDepartmentDropdown();
   showApplicationDeadline();
+  displayFees();
   $("#nonKuetianSection").hide();
   $("#numberOfKidsDiv").hide();
   $("#secondPage").hide();
